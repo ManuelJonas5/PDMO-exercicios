@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f4f7;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+.calculadora {
+    width: 100%;
+    max-width: 420px;
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 16px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.campo {
+    margin-bottom: 18px;
+}
+
+.campo label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-weight: bold;
+}
+
+.campo input {
+    width: 100%;
+
+    padding: 13px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    outline: none;
+}
+
+.campo input:focus {
+    border-color: #2563eb;
+}
+
+.operacoes {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 10px;
+
+    margin-top: 10px;
+}
+
+.operacoes button {
+    border: none;
+
+    padding: 15px;
+
+    border-radius: 8px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.operacoes button:hover {
+    background: #1d4ed8;
+}
+
+.limpar {
+    width: 100%;
+
+    margin-top: 15px;
+
+    padding: 13px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #dc2626;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.limpar:hover {
+    background: #b91c1c;
+}
+
+.resultado {
+    margin-top: 20px;
+
+    padding: 18px;
+
+    border-radius: 10px;
+
+    background: #f3f4f6;
+
+    text-align: center;
+}
+
+.resultado span {
+    display: block;
+
+    font-size: 14px;
+
+    color: #666;
+
+    margin-bottom: 8px;
+}
+
+.resultado strong {
+    font-size: 28px;
+
+    color: #111827;
+}
+
+#mensagem {
+    text-align: center;
+
+    margin-top: 12px;
+
+    font-size: 14px;
+
+    color: #dc2626;
+}
+
+/* Adaptação para telas pequenas */
+
+@media (max-width: 400px) {
+
+    .calculadora {
+        padding: 20px;
+    }
+
+    .operacoes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}

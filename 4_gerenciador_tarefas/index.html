@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gerenciador de Tarefas</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <h1>Gerenciador de Tarefas</h1>
+
+        <!-- Formulário -->
+        <form id="formTarefa">
+
+            <input
+                type="text"
+                id="textoTarefa"
+                placeholder="Digite uma tarefa..."
+                autocomplete="off"
+            >
+
+            <select id="categoriaTarefa">
+
+                <option value="Trabalho">
+                    Trabalho
+                </option>
+
+                <option value="Pessoal">
+                    Pessoal
+                </option>
+
+                <option value="Estudos">
+                    Estudos
+                </option>
+
+            </select>
+
+            <button type="submit" class="btn-adicionar">
+                Adicionar
+            </button>
+
+        </form>
+
+
+        <!-- Filtros -->
+        <div class="filtros">
+
+            <button class="filtro ativo" data-filtro="Todas">
+                Todas
+            </button>
+
+            <button class="filtro" data-filtro="Trabalho">
+                Trabalho
+            </button>
+
+            <button class="filtro" data-filtro="Pessoal">
+                Pessoal
+            </button>
+
+            <button class="filtro" data-filtro="Estudos">
+                Estudos
+            </button>
+
+        </div>
+
+
+        <!-- Lista de tarefas -->
+        <div id="listaTarefas">
+
+            <p class="vazio">
+                Nenhuma tarefa adicionada.
+            </p>
+
+        </div>
+
+
+        <!-- Limpar concluídas -->
+        <button
+            id="limparConcluidas"
+            class="btn-limpar"
+        >
+            Limpar tarefas concluídas
+        </button>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
