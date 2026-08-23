@@ -3,16 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de Compras</title>
-
-    <link rel="stylesheet" href="style.css">
+    <title>A comprar</title>
+    <link rel="stylesheet" href="stile.css">
 </head>
 
 <body>
 
     <div class="container">
 
-        <h1>🛒 Lista de Compras</h1>
+        <h1>Lista de Compras</h1>
 
         <div class="formulario">
             <input
@@ -24,31 +23,27 @@
             <button id="adicionarBtn">Adicionar</button>
         </div>
 
-        <div class="lista-container">
+        <h2>A comprar</h2>
 
-            <section>
-                <h2>
-                    A comprar
-                    <span id="contadorComprar">0</span>
-                </h2>
+        <ul id="listaComprar"></ul>
 
-                <ul id="listaComprar"></ul>
-            </section>
+        <div class="acoes">
 
-            <section>
-                <h2>
-                    Comprados
-                    <span id="contadorComprados">0</span>
-                </h2>
+            <label class="selecionar-tudo">
+                <input type="checkbox" id="selecionarTudo">
+                <span class="check-tudo"></span>
+                Tudo
+            </label>
 
-                <ul id="listaComprados"></ul>
-            </section>
+            <button id="continuarBtn" class="continuar">
+                Continuar →
+            </button>
 
         </div>
 
     </div>
 
-    <script src="script.js"></script>
+    <script src="cript.js"></script>
 
 </body>
 </html>
